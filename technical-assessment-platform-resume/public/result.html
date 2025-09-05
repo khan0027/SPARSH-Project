@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head><meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Result</title>
+        <link rel="stylesheet" href="/styles.css"/>
+    </head><body>
+    <div class="container">
+        <h1>Assessment Result</h1>
+        <div id="resultCard" class="card">
+    </div>
+    <div id="uploadSection" class="card" style="display:none;">
+        <h2>Upload Resume</h2>
+        <p>Accepted types: PDF, DOC, DOCX. Max size: 5MB</p>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx">
+        <button id="uploadBtn" class="btn">Upload</button>
+        <div id="uploadMsg" class="msg"></div>
+    </div>
+    <div id="reviewSection" class="card" style="display:none;">
+        <h2>Review Answers</h2><div id="reviewList">
+        </div>
+    </div>
+</div>
+<script src="/result.js"></script>
+</body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Work Calendar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <h2 class="text-xl font-semibold mb-4">Add Work Calendar</h2>
+    
+    <!-- Half Working Day Checkbox -->
+    <div class="mb-4 flex items-center gap-2">
+      <input id="halfDayToggle" type="checkbox" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+      <label for="halfDayToggle" class="text-gray-700">Half working day & half weekend</label>
+    </div>
+
+    <!-- Calendar Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full border border-gray-200 text-sm text-center">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="border px-2 py-2">Day</th>
+            <th class="border px-2 py-2">All</th>
+            <th class="border px-2 py-2">1st</th>
+            <th class="border px-2 py-2">2nd</th>
+            <th class="border px-2 py-2">3rd</th>
+            <th class="border px-2 py-2">4th</th>
+            <th class="border px-2 py-2">5th</th>
+          </tr>
+        </thead>
+        <tbody id="calendarBody">
+          <!-- Days will be rendered by JS -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-end gap-3 mt-6">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Save</button>
+      <button class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

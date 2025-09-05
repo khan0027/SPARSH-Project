@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical Assessment – Language Selection</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Candidate Technical Assessment</h1>
+    <p>Upload your resume to auto-detect skills, or select languages manually.</p>
+
+    <div class="card">
+      <h2>Upload Resume for Skill Detection</h2>
+      <input type="file" id="resumeDetect" accept=".pdf,.doc,.docx">
+      <button id="detectBtn" class="btn">Detect Languages</button>
+      <div id="detectedMsg" class="msg"></div>
+    </div>
+
+    <div id="langCard" class="card">
+      <h2>Languages</h2>
+      <div id="langList"></div>
+    </div>
+
+    <div class="controls">
+      <label>
+        Questions per language
+        <input type="number" id="perLanguage" min="1" max="20" value="5">
+      </label>
+      <label>
+        Time per question (seconds)
+        <input type="number" id="timePerQuestion" min="15" max="300" value="60">
+      </label>
+      <label>
+        Passing threshold (%)
+        <input type="number" id="threshold" min="0" max="100" value="60">
+      </label>
+    </div>
+
+    <button id="startBtn" class="btn" disabled>Start Test</button>
+    <div id="msg" class="msg"></div>
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+</html>

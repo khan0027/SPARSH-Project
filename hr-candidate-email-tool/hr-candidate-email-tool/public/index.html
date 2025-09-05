@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HR Candidate Email Response Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <header class="header">
+      <h1>HR Candidate Email Response Tool</h1>
+      <p class="subtitle">Send selection/rejection emails quickly with predefined templates.</p>
+    </header>
+
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">Candidate Details</h2>
+      <form id="emailForm" novalidate>
+        <!-- Status -->
+        <fieldset class="field" aria-describedby="statusHint">
+          <legend>Status <span aria-hidden="true" class="required">*</span></legend>
+          <div class="radio-group">
+            <label class="radio">
+              <input type="radio" name="status" value="selected" required />
+              <span>Selected</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="status" value="rejected" required />
+              <span>Rejected</span>
+            </label>
+          </div>
+          <p id="statusHint" class="hint">Choose the candidate result.</p>
+          <p class="error" id="statusError" role="alert" hidden>Please select a status.</p>
+        </fieldset>
+
+        <!-- Name -->
+        <div class="field">
+          <label for="name">Candidate Name <span aria-hidden="true" class="required">*</span></label>
+          <input id="name" name="name" type="text" placeholder="e.g., Devendra Kumar" required maxlength="80" />
+          <p class="error" id="nameError" role="alert" hidden>Please enter the candidate's name.</p>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="email">Candidate Email <span aria-hidden="true" class="required">*</span></label>
+          <input id="email" name="email" type="email" placeholder="e.g., dev@example.com" required maxlength="120" />
+          <p class="error" id="emailError" role="alert" hidden>Please enter a valid email address.</p>
+        </div>
+
+        <!-- Position -->
+        <div class="field">
+          <label for="position">Position Applied <span aria-hidden="true" class="required">*</span></label>
+          <input id="position" name="position" type="text" placeholder="e.g., Frontend Developer" required maxlength="100" />
+          <p class="error" id="positionError" role="alert" hidden>Please enter the position.</p>
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+          <button type="button" id="previewBtn" class="btn secondary">Preview Email</button>
+          <button type="submit" id="sendBtn" class="btn primary">Send Email</button>
+        </div>
+
+        <div class="note">@devendra kumar</div>
+      </form>
+    </section>
+
+    <!-- Preview -->
+    <section id="previewSection" class="card preview" aria-labelledby="preview-title" hidden>
+      <div class="preview-header">
+        <h2 id="preview-title">Email Preview</h2>
+        <button class="btn link" id="hidePreviewBtn" aria-controls="previewSection">Hide</button>
+      </div>
+      <div class="preview-content">
+        <div class="kv"><span class="k">To:</span><span class="v" id="pvTo"></span></div>
+        <div class="kv"><span class="k">Subject:</span><span class="v" id="pvSubject"></span></div>
+        <div class="kv stack">
+          <span class="k">Body:</span>
+          <pre id="pvBody" class="email-body"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section aria-live="polite" aria-atomic="true" class="alerts">
+      <div id="successMsg" class="alert success" hidden></div>
+      <div id="errorMsg" class="alert error" hidden></div>
+    </section>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Devendra</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

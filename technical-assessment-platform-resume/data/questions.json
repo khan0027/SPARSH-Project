@@ -1,0 +1,262 @@
+{
+  "JavaScript": [
+    {
+      "question": "What is the output of: console.log(typeof typeof 1)?",
+      "options": [
+        "number",
+        "string",
+        "undefined",
+        "object"
+      ],
+      "correctAnswer": "string"
+    },
+    {
+      "question": "Which method converts a JSON string to a JavaScript object?",
+      "options": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "Object.assign()",
+        "toString()"
+      ],
+      "correctAnswer": "JSON.parse()"
+    },
+    {
+      "question": "Which keyword declares a block-scoped variable?",
+      "options": [
+        "var",
+        "let",
+        "function",
+        "static"
+      ],
+      "correctAnswer": "let"
+    },
+    {
+      "question": "What does Promise.resolve(5) do?",
+      "options": [
+        "Creates a rejected promise",
+        "Creates a promise that resolves to 5",
+        "Creates a new Promise with executor 5",
+        "Throws error"
+      ],
+      "correctAnswer": "Creates a promise that resolves to 5"
+    },
+    {
+      "question": "Which array method returns a new array with elements that pass a test?",
+      "options": [
+        "forEach",
+        "map",
+        "filter",
+        "reduce"
+      ],
+      "correctAnswer": "filter"
+    }
+  ],
+  "Python": [
+    {
+      "question": "Which data type is immutable?",
+      "options": [
+        "list",
+        "dict",
+        "set",
+        "tuple"
+      ],
+      "correctAnswer": "tuple"
+    },
+    {
+      "question": "What is the output of: len('hello')?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "Error"
+      ],
+      "correctAnswer": "5"
+    },
+    {
+      "question": "How do you create a virtual environment with venv?",
+      "options": [
+        "python -m venv env",
+        "pip venv env",
+        "python venv create",
+        "venv init"
+      ],
+      "correctAnswer": "python -m venv env"
+    },
+    {
+      "question": "Which statement is used to handle exceptions?",
+      "options": [
+        "catch",
+        "except",
+        "try/except",
+        "throw"
+      ],
+      "correctAnswer": "try/except"
+    },
+    {
+      "question": "What is list comprehension?",
+      "options": [
+        "A concise way to create lists",
+        "A debugging tool",
+        "A testing strategy",
+        "A module"
+      ],
+      "correctAnswer": "A concise way to create lists"
+    }
+  ],
+  "Java": [
+    {
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": [
+        "implements",
+        "extends",
+        "inherits",
+        "uses"
+      ],
+      "correctAnswer": "extends"
+    },
+    {
+      "question": "What is JVM?",
+      "options": [
+        "Java Virtual Machine",
+        "Java Variable Method",
+        "Just Very Modern",
+        "JSON Validator Module"
+      ],
+      "correctAnswer": "Java Virtual Machine"
+    },
+    {
+      "question": "Which data type holds true/false?",
+      "options": [
+        "int",
+        "String",
+        "boolean",
+        "char"
+      ],
+      "correctAnswer": "boolean"
+    },
+    {
+      "question": "Which collection allows duplicate elements?",
+      "options": [
+        "Set",
+        "Map",
+        "List",
+        "None"
+      ],
+      "correctAnswer": "List"
+    },
+    {
+      "question": "What is the default value of an object reference?",
+      "options": [
+        "0",
+        "null",
+        "undefined",
+        "empty"
+      ],
+      "correctAnswer": "null"
+    }
+  ],
+  "C++": [
+    {
+      "question": "Which operator is used to get the address of a variable?",
+      "options": [
+        "*",
+        "&",
+        "->",
+        "%"
+      ],
+      "correctAnswer": "&"
+    },
+    {
+      "question": "Which is used for dynamic memory allocation in C++?",
+      "options": [
+        "malloc",
+        "new",
+        "alloc",
+        "create"
+      ],
+      "correctAnswer": "new"
+    },
+    {
+      "question": "Which header contains std::vector?",
+      "options": [
+        "<array>",
+        "<vector>",
+        "<list>",
+        "<map>"
+      ],
+      "correctAnswer": "<vector>"
+    },
+    {
+      "question": "What does RAII stand for?",
+      "options": [
+        "Resource Acquisition Is Initialization",
+        "Random Access In Initialization",
+        "Resource Allocation Is Immediate",
+        "Run Asynchronously Immediately"
+      ],
+      "correctAnswer": "Resource Acquisition Is Initialization"
+    },
+    {
+      "question": "Which is not a C++ access specifier?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "package"
+      ],
+      "correctAnswer": "package"
+    }
+  ],
+  "React": [
+    {
+      "question": "Which hook is used to add state to functional components?",
+      "options": [
+        "useEffect",
+        "useState",
+        "useContext",
+        "useMemo"
+      ],
+      "correctAnswer": "useState"
+    },
+    {
+      "question": "How do you pass data from parent to child?",
+      "options": [
+        "props",
+        "state",
+        "context",
+        "refs"
+      ],
+      "correctAnswer": "props"
+    },
+    {
+      "question": "What does JSX stand for?",
+      "options": [
+        "JavaScript XML",
+        "Java Standard eXchange",
+        "JSON eXtended",
+        "None"
+      ],
+      "correctAnswer": "JavaScript XML"
+    },
+    {
+      "question": "Which lifecycle hook runs after render and when dependencies change?",
+      "options": [
+        "useMemo",
+        "useEffect",
+        "componentDidMount",
+        "shouldComponentUpdate"
+      ],
+      "correctAnswer": "useEffect"
+    },
+    {
+      "question": "Keys in lists help React to:",
+      "options": [
+        "Style items",
+        "Identify which items changed",
+        "Sort items",
+        "Index items"
+      ],
+      "correctAnswer": "Identify which items changed"
+    }
+  ]
+}
